@@ -2,8 +2,7 @@
 <html>
     <head>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
-        <meta name="description" content="A single page application with shared reusable modules distributed on different static web servers around the world and maintained by different people with different skills!">
-        <meta name="author" content="Zhiming Zhou, zzm.vmiis@gmail.com">
+        <meta name="description" content="Woolcock">
         <link rel="icon" href="data:,">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css" />
     </head>
@@ -23,6 +22,7 @@
                 <div menu id="vm-menu">
                     <a href="?/home"><i class="fa fa-home"></i> Home</a>
                     <a href="?/main"><i class="fa fa-th"></i> APAP-OHS</a>
+                    <a href="?/permissions"><i class="fa fa-lock"></i> Permissions</a>
                     <a id=vm_signin onclick="$vm.nav_wappsystem_signin();"><i class="fa fa-user"></i> Sign In</a>
                     <a id=vm_signout class=vm-hide onclick=$vm.nav_signout()><i class="fa fa-user"></i> Sign Out</a>
                 </div>
@@ -101,7 +101,7 @@
         $vm.show=function(id){
             $vm.active_id=id;
             document.title=$vm.default_title;
-            $("meta[name='description']").attr("content", "A single page application with shared reusable modules distributed on different static web servers around the world and maintained by different people with different skills!");
+            $("meta[name='description']").attr("content", "Woolcock Institute of Medical Research");
             $("body").removeClass();
             $("body").addClass('body_background_default');
             if(id!=undefined && $vm.vm[id]!=undefined && $vm.vm[id].show!=undefined) $vm.vm[id].show();
@@ -351,7 +351,7 @@
     </style>
     <script boot>
         //------------------------------------
-        var url1="https://www.vmiis.com/modules/starter/app01.html"; //if($vm.localhost) url1="http://127.0.0.1:8000/vmiis/your-company-business-portal/modules/starter/app01.html";
+        var url1="https://www.vmiis.com/modules/starter/app01.html"; if($vm.localhost) url1="http://127.0.0.1:8000/vmiis/your-company-business-portal/modules/starter/app01.html";
         var urls=[url1]; $vm.module_start_id=1;
         //---------------------------------------------
         $(urls).each(function(index,url){

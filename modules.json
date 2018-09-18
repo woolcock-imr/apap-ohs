@@ -2,7 +2,17 @@
 	"modules":
 	{
 
-    	"main":         {"url":"https://apap-ohs.rt.org.au/modules/panels/main.html"},
+		"permissions":              			{					   "url":"https://apap-ohs.rt.org.au/modules/permissions/panel.html"},
+        "permission-check":                     {                      "url":"https://apap-ohs.rt.org.au/modules/permissions/check.html"},
+        "permission-role-login-data":           {"table_id":"91000128","url":"https://apap-ohs.rt.org.au/modules/permissions/role-login-data.html","form_module":"permission-role-login-form"},
+        "permission-role-login-form":           {"table_id":"91000128","url":"https://apap-ohs.rt.org.au/modules/permissions/role-login-form.html"},
+        "permission-role-table-group-data":     {"table_id":"91000127","url":"https://apap-ohs.rt.org.au/modules/permissions/role-table-group-data.html","form_module":"permission-role-table-group-form"},
+        "permission-role-table-group-form":     {"table_id":"91000127","url":"https://apap-ohs.rt.org.au/modules/permissions/role-table-group-form.html"},
+        "permission-query-data":                {"table_id":"91000126","url":"https://apap-ohs.rt.org.au/modules/permissions/query-data.html","form_module":"permission-query-form"},
+        "permission-query-form":                {"table_id":"91000126","url":"https://apap-ohs.rt.org.au/modules/permissions/query-form.html"},
+
+
+		"main":         {"url":"https://apap-ohs.rt.org.au/modules/panels/main.html"},
   		"child":        {"url":"https://apap-ohs.rt.org.au/modules/panels/child.html"},
 		"quest-panel":  {"url":"https://apap-ohs.rt.org.au/modules/online-questionnaire/quest.html"},
 
