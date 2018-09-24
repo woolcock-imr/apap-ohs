@@ -32,6 +32,45 @@
 				"v1-anthropometry":	 	{"table_id":"1808311409",		"url":"https://apap-ohs.rt.org.au/modules/tasks/anthro-data.html",	"form_module":"v1-anthropometry-form"},
 				"v1-anthropometry-form":	 	{"table_id":"1808311409",		"url":"https://apap-ohs.rt.org.au/modules/tasks/anthro-form.html","quest":"1"},
 
+				"v1-med-hx":	 	{"table_id":"1808311409",		"url":"https://apap-ohs.rt.org.au/modules/tasks/medhx-data.html",	"form_module":"v1-med-hx-form"},
+				"v1-med-hx-form":	 	{"table_id":"1808311409",		"url":"https://apap-ohs.rt.org.au/modules/tasks/medhx-form.html","quest":"1"},
+
+				"v1-social-hx":	 	{"table_id":"1808311409",		"url":"https://apap-ohs.rt.org.au/modules/tasks/social-data.html",	"form_module":"v1-social-hx-form"},
+				"v1-social-hx-form":	 	{"table_id":"1808311409",		"url":"https://apap-ohs.rt.org.au/modules/tasks/social-form.html","quest":"1"},
+
+				"v1-physical":	 	{"table_id":"1808311409",		"url":"https://apap-ohs.rt.org.au/modules/tasks/physical-data.html",	"form_module":"v1-physical-form"},
+				"v1-physical-form":	 	{"table_id":"1808311409",		"url":"https://apap-ohs.rt.org.au/modules/tasks/physical-form.html","quest":"1"},
+
+				"v1-medication":	 	{"table_id":"1808311409",		"url":"https://apap-ohs.rt.org.au/modules/tasks/med-data.html",	"form_module":"v1-medication-form"},
+				"v1-medication-form":	 	{"table_id":"1808311409",		"url":"https://apap-ohs.rt.org.au/modules/tasks/med-form.html","quest":"1"},
+
+				"v1-spirometry":	 	{"table_id":"1808311409",		"url":"https://apap-ohs.rt.org.au/modules/tasks/spirometry-data.html",	"form_module":"v1-spirometry-form"},
+				"v1-spirometry-form":	 	{"table_id":"1808311409",		"url":"https://apap-ohs.rt.org.au/modules/tasks/spirometry-form.html","quest":"1"},
+
+				"v1-bloodgas":	 	{"table_id":"1808311409",		"url":"https://apap-ohs.rt.org.au/modules/tasks/bloodgas-data.html",	"form_module":"v1-bloodgas-form"},
+				"v1-bloodgas-form":	 	{"table_id":"1808311409",		"url":"https://apap-ohs.rt.org.au/modules/tasks/bloodgas-form.html","quest":"1"},
+
+				"v1-blood":	 	{"table_id":"1808311409",		"url":"https://apap-ohs.rt.org.au/modules/tasks/blood-data.html",	"form_module":"v1-blood-form"},
+				"v1-blood-form":	 	{"table_id":"1808311409",		"url":"https://apap-ohs.rt.org.au/modules/tasks/blood-form.html","quest":"1"},
+
+				"v1-pwa1":	 	{"table_id":"1808311409",		"url":"https://apap-ohs.rt.org.au/modules/tasks/pwa-data.html",	"form_module":"v1-pwa1-form"},
+				"v1-pwa1-form":	 	{"table_id":"1808311409",		"url":"https://apap-ohs.rt.org.au/modules/tasks/pwa-form.html","quest":"1"},
+
+				"v1-pwa2":	 	{"table_id":"1808311409",		"url":"https://apap-ohs.rt.org.au/modules/tasks/pwa-data.html",	"form_module":"v1-pwa2-form"},
+				"v1-pwa2-form":	 	{"table_id":"1808311409",		"url":"https://apap-ohs.rt.org.au/modules/tasks/pwa-form.html","quest":"1"},
+
+				"v1-pwv1":	 	{"table_id":"1808311409",		"url":"https://apap-ohs.rt.org.au/modules/tasks/pwv-data.html",	"form_module":"v1-pwv1-form"},
+				"v1-pwv1-form":	 	{"table_id":"1808311409",		"url":"https://apap-ohs.rt.org.au/modules/tasks/pwv-form.html","quest":"1"},
+
+				"v1-pwv2":	 	{"table_id":"1808311409",		"url":"https://apap-ohs.rt.org.au/modules/tasks/pwv-data.html",	"form_module":"v1-pwv2-form"},
+				"v1-pwv2-form":	 	{"table_id":"1808311409",		"url":"https://apap-ohs.rt.org.au/modules/tasks/pwv-form.html","quest":"1"},
+
+				"v1-cpappressure":	 	{"table_id":"1808311409",		"url":"https://apap-ohs.rt.org.au/modules/tasks/pressurecpap-data.html",	"form_module":"v1-cpappressure-form"},
+				"v1-cpappressure-form":	 	{"table_id":"1808311409",		"url":"https://apap-ohs.rt.org.au/modules/tasks/pressurecpap-form.html","quest":"1"},
+
+				"v1-apappressure":	 	{"table_id":"1808311409",		"url":"https://apap-ohs.rt.org.au/modules/tasks/pressureapap-data.html",	"form_module":"v1-apappressure-form"},
+				"v1-apappressure-form":	 	{"table_id":"1808311409",		"url":"https://apap-ohs.rt.org.au/modules/tasks/pressureapap-form.html","quest":"1"},
+
 
 				"quest_list":{
 				"list":{

@@ -1,7 +1,7 @@
 <div id=D__ID>
     <section id=form_container__ID>
         <div id=header__ID>
-    		Anthropometry
+    		Form Name
     	</div>
     	<form id=F__ID>
             <div class="container">
@@ -22,23 +22,63 @@
                 <!-- Form Inputs-------------------------------------->
                 <div class='row row__ID'>
     				<div class="col">
-    					<span>Height(cm)</span>
-    					<input type=text class=form-control name=Height>
+    					<span>Date</span>
+    					<input type=date class=form-control name=date>
     				</div>
     			</div>
                 <div class='row row__ID'>
     				<div class="col">
-    					<span>Weight (kg)</span>
-    					<input type=text class=form-control name=Weight>
+    					<span>Time</span>
+    					<input type=Time class=form-control name=time>
     				</div>
     			</div>
                 <div class='row row__ID'>
     				<div class="col">
-    					<span>BMI</span>
-    					<input type=text class=form-control  readonly name=BMI>
+    					<span>FiO2</span>
+    					<input type=text class=form-control name=FiO2>
     				</div>
     			</div>
-                <!---------------------------------------------------->
+          <div class='row row__ID'>
+      <div class="col">
+        <span>O2 (L/min)</span>
+        <input type=text class=form-control name=O2>
+      </div>
+    </div>
+    <div class='row row__ID'>
+<div class="col">
+  <span>pH</span>
+  <input type=text class=form-control name=pH>
+</div>
+</div>
+<div class='row row__ID'>
+<div class="col">
+<span>PCO2</span>
+<input type=text class=form-control name=PCO2>
+</div>
+</div>
+<div class='row row__ID'>
+<div class="col">
+<span>HCO3</span>
+<input type=text class=form-control name=HCO3>
+</div>
+</div>
+<div class='row row__ID'>
+<div class="col">
+<span>BE</span>
+<input type=text class=form-control name=BE>
+</div>
+</div>
+<div class='row row__ID'>
+<div class="col">
+<span>SaO2</span>
+<input type=text class=form-control name=SaO2>
+</div>
+</div>
+
+
+
+
+        <!---------------------------------------------------->
 
 
                 <!-- submit button part for all tsak forms------------>
@@ -58,8 +98,6 @@
             VmInclude:__COMPONENT__/module/form.v1.js
             VmInclude:__CURRENT_PATH__/task-form.js
             //-------------------------------------
-            /*record.BMI=((parseInt(record.Height))*((parseInt(record.Height))/((parseInt(record.Weight)).toString();
-*/
         }
     </script>
     <style>

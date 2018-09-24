@@ -1,7 +1,7 @@
 <div id=D__ID>
     <section id=form_container__ID>
         <div id=header__ID>
-    		Anthropometry
+    		Form Name
     	</div>
     	<form id=F__ID>
             <div class="container">
@@ -22,23 +22,43 @@
                 <!-- Form Inputs-------------------------------------->
                 <div class='row row__ID'>
     				<div class="col">
-    					<span>Height(cm)</span>
-    					<input type=text class=form-control name=Height>
+    					<span>Date of Spirometry</span>
+    					<input type=date class=form-control name=date>
     				</div>
     			</div>
                 <div class='row row__ID'>
     				<div class="col">
-    					<span>Weight (kg)</span>
-    					<input type=text class=form-control name=Weight>
+    					<span>FEV1/FVC Ratio</span>
+    					<input type=text class=form-control name=ratio>
     				</div>
     			</div>
                 <div class='row row__ID'>
     				<div class="col">
-    					<span>BMI</span>
-    					<input type=text class=form-control  readonly name=BMI>
+    					<span>FEV1</span>
+    					<input type=text class=form-control name=FEV1>
     				</div>
     			</div>
-                <!---------------------------------------------------->
+          <div class='row row__ID'>
+      <div class="col">
+        <span>FEV1 (%Predicted)</span>
+        <input type=text class=form-control name=fev1predicted>
+      </div>
+    </div>
+    <div class='row row__ID'>
+<div class="col">
+  <span>FVC</span>
+  <input type=text class=form-control name=FVC>
+</div>
+</div>
+<div class='row row__ID'>
+<div class="col">
+<span>FVC (%Predicted)</span>
+<input type=text class=form-control name=fvcpredicted>
+</div>
+</div>
+
+
+        <!---------------------------------------------------->
 
 
                 <!-- submit button part for all tsak forms------------>
@@ -58,8 +78,6 @@
             VmInclude:__COMPONENT__/module/form.v1.js
             VmInclude:__CURRENT_PATH__/task-form.js
             //-------------------------------------
-            /*record.BMI=((parseInt(record.Height))*((parseInt(record.Height))/((parseInt(record.Weight)).toString();
-*/
         }
     </script>
     <style>

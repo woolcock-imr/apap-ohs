@@ -22,22 +22,28 @@
                 <!-- Form Inputs-------------------------------------->
                 <div class='row row__ID'>
     				<div class="col">
-    					<span>Height(cm)</span>
-    					<input type=text class=form-control name=Height>
+    					<span>Medical/Surgical History</span>
+    					<input type=text class=form-control name=hx>
     				</div>
     			</div>
                 <div class='row row__ID'>
     				<div class="col">
-    					<span>Weight (kg)</span>
-    					<input type=text class=form-control name=Weight>
+    					<span>Start Date</span>
+    					<input type=date class=form-control name=startdate>
     				</div>
     			</div>
                 <div class='row row__ID'>
     				<div class="col">
-    					<span>BMI</span>
-    					<input type=text class=form-control  readonly name=BMI>
+    					<span>Stop Date</span>
+    					<input type=date class=form-control  name=stopdate>
     				</div>
     			</div>
+          <div class='row row__ID'>
+      <div class="col">
+        <span>Ongoing (Yes or No)</span>
+        <input type=date class=form-control  name=ongoing>
+      </div>
+    </div>
                 <!---------------------------------------------------->
 
 
@@ -58,8 +64,8 @@
             VmInclude:__COMPONENT__/module/form.v1.js
             VmInclude:__CURRENT_PATH__/task-form.js
             //-------------------------------------
-            /*record.BMI=((parseInt(record.Height))*((parseInt(record.Height))/((parseInt(record.Weight)).toString();
-*/
+            record.BMI=((parseInt(record.Height))*((parseInt(record.Height))/((parseInt(record.Weight)).toString();
+
         }
     </script>
     <style>

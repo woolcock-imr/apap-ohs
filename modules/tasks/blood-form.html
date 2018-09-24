@@ -1,7 +1,7 @@
 <div id=D__ID>
     <section id=form_container__ID>
         <div id=header__ID>
-    		Anthropometry
+    		Form Name
     	</div>
     	<form id=F__ID>
             <div class="container">
@@ -22,23 +22,89 @@
                 <!-- Form Inputs-------------------------------------->
                 <div class='row row__ID'>
     				<div class="col">
-    					<span>Height(cm)</span>
-    					<input type=text class=form-control name=Height>
+    					<span>Date</span>
+    					<input type=date class=form-control name=date>
     				</div>
     			</div>
                 <div class='row row__ID'>
     				<div class="col">
-    					<span>Weight (kg)</span>
-    					<input type=text class=form-control name=Weight>
+    					<span>hsTnT</span>
+    					<input type=text class=form-control name=hsTnT>
     				</div>
     			</div>
                 <div class='row row__ID'>
     				<div class="col">
-    					<span>BMI</span>
-    					<input type=text class=form-control  readonly name=BMI>
+    					<span>NT-proBNP</span>
+    					<input type=text class=form-control name=NT-proBNP>
     				</div>
     			</div>
-                <!---------------------------------------------------->
+          <div class='row row__ID'>
+      <div class="col">
+        <span>Fasting Glucose </span>
+        <input type=text class=form-control name=glucose>
+      </div>
+    </div>
+    <div class='row row__ID'>
+<div class="col">
+  <span>HBA1C</span>
+  <input type=text class=form-control name=HBA1C>
+</div>
+</div>
+<div class='row row__ID'>
+<div class="col">
+<span>Fasting Cholesterol</span>
+<input type=text class=form-control name=cholesterol>
+</div>
+</div>
+<div class='row row__ID'>
+<div class="col">
+<span>Fasting LDL</span>
+<input type=text class=form-control name=ldl>
+</div>
+</div>
+<div class='row row__ID'>
+<div class="col">
+<span>Fasting HDL</span>
+<input type=text class=form-control name=hdl>
+</div>
+</div>
+<div class='row row__ID'>
+<div class="col">
+<span>Fasting Triglcyerides</span>
+<input type=text class=form-control name=triglyc>
+</div>
+</div>
+<div class='row row__ID'>
+<div class="col">
+<span>Creatinine</span>
+<input type=text class=form-control name=creatinine>
+</div>
+</div>
+<div class='row row__ID'>
+<div class="col">
+<span>Highly reactive CRP (hs-CRP)</span>
+<input type=text class=form-control name=hscrp>
+</div>
+</div>
+<div class='row row__ID'>
+<div class="col">
+<span>AST</span>
+<input type=text class=form-control name=AST>
+</div>
+</div>
+<div class='row row__ID'>
+<div class="col">
+<span>ALT</span>
+<input type=text class=form-control name=ALT>
+</div>
+</div>
+
+
+
+
+
+
+        <!---------------------------------------------------->
 
 
                 <!-- submit button part for all tsak forms------------>
@@ -58,8 +124,6 @@
             VmInclude:__COMPONENT__/module/form.v1.js
             VmInclude:__CURRENT_PATH__/task-form.js
             //-------------------------------------
-            /*record.BMI=((parseInt(record.Height))*((parseInt(record.Height))/((parseInt(record.Weight)).toString();
-*/
         }
     </script>
     <style>
