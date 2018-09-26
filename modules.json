@@ -71,6 +71,69 @@
 				"v1-apappressure":	 	{"table_id":"1808311409",		"url":"https://apap-ohs.rt.org.au/modules/tasks/pressureapap-data.html",	"form_module":"v1-apappressure-form"},
 				"v1-apappressure-form":	 	{"table_id":"1808311409",		"url":"https://apap-ohs.rt.org.au/modules/tasks/pressureapap-form.html","quest":"1"},
 
+				"v1-ess":	 	{"table_id":"1808311409",		"url":"https://apap-ohs.rt.org.au/modules/tasks/epworth-sleepiness-scale-data.html",	"form_module":"v1-ess-form"},
+				"v1-ess-form":	 	{"table_id":"1808311409",		"url":"https://apap-ohs.rt.org.au/modules/tasks/epworth-sleepiness-scale-form.html","quest":"1"},
+
+				"v1-sri":	 	{"table_id":"1808311409",		"url":"https://apap-ohs.rt.org.au/modules/tasks/sri-data.html",	"form_module":"v1-sri-form"},
+				"v1-sri-form":	 	{"table_id":"1808311409",		"url":"https://apap-ohs.rt.org.au/modules/tasks/sri-form.html","quest":"1"},
+
+				"v1-fosq":	 	{"table_id":"1808311409",		"url":"https://apap-ohs.rt.org.au/modules/tasks/fosq-data.html",	"form_module":"v1-fosq-form"},
+				"v1-fosq-form":	 	{"table_id":"1808311409",		"url":"https://apap-ohs.rt.org.au/modules/tasks/fosq-form.html","quest":"1"},
+
+				"v1-ecg":	 	{"table_id":"1808311409",		"url":"https://apap-ohs.rt.org.au/modules/tasks/ecg-data.html",	"form_module":"v1-ecg-form"},
+				"v1-ecg-form":	 	{"table_id":"1808311409",		"url":"https://apap-ohs.rt.org.au/modules/tasks/ecg-form.html","quest":"1"},
+
+
+				"1m-bloodgas":	 	{"table_id":"1808311409",		"url":"https://apap-ohs.rt.org.au/modules/tasks/bloodgas-data.html",	"form_module":"1m-bloodgas-form"},
+				"1m-bloodgas-form":	 	{"table_id":"1808311409",		"url":"https://apap-ohs.rt.org.au/modules/tasks/bloodgas-form.html","quest":"1"},
+
+				"1m-adverseevents":	 	{"table_id":"1808311409",		"url":"https://apap-ohs.rt.org.au/modules/tasks/adverseevents-data.html",	"form_module":"1m-adverseevents-form"},
+				"1m-adverseevents-form":	 	{"table_id":"1808311409",		"url":"https://apap-ohs.rt.org.au/modules/tasks/adverseevents-form.html","quest":"1"},
+
+				"1m-cpapdownload":	 	{"table_id":"1808311409",		"url":"https://apap-ohs.rt.org.au/modules/tasks/cpapdownload-data.html",	"form_module":"1m-cpapdownload-form"},
+				"1m-cpapdownload-form":	 	{"table_id":"1808311409",		"url":"https://apap-ohs.rt.org.au/modules/tasks/cpapdownload-form.html","quest":"1"},
+
+				"1m-spirometry":	 	{"table_id":"1808311409",		"url":"https://apap-ohs.rt.org.au/modules/tasks/spirometry-data.html",	"form_module":"1m-spirometry-form"},
+				"1m-spirometry-form":	 	{"table_id":"1808311409",		"url":"https://apap-ohs.rt.org.au/modules/tasks/spirometry-form.html","quest":"1"},
+
+				"3m-adverseevents":	 	{"table_id":"1808311409",		"url":"https://apap-ohs.rt.org.au/modules/tasks/adverseevents-data.html",	"form_module":"3m-adverseevents-form"},
+				"3m-adverseevents-form":	 	{"table_id":"1808311409",		"url":"https://apap-ohs.rt.org.au/modules/tasks/adverseevents-form.html","quest":"1"},
+
+				"3m-bloodgas":	 	{"table_id":"1808311409",		"url":"https://apap-ohs.rt.org.au/modules/tasks/bloodgas-data.html",	"form_module":"3m-bloodgas-form"},
+				"3m-bloodgas-form":	 	{"table_id":"1808311409",		"url":"https://apap-ohs.rt.org.au/modules/tasks/bloodgas-form.html","quest":"1"},
+
+				"3m-blood":	 	{"table_id":"1808311409",		"url":"https://apap-ohs.rt.org.au/modules/tasks/blood-data.html",	"form_module":"3m-blood-form"},
+				"3m-blood-form":	 	{"table_id":"1808311409",		"url":"https://apap-ohs.rt.org.au/modules/tasks/blood-form.html","quest":"1"},
+
+				"3m-pwa1":	 	{"table_id":"1808311409",		"url":"https://apap-ohs.rt.org.au/modules/tasks/pwa-data.html",	"form_module":"3m-pwa1-form"},
+				"3m-pwa1-form":	 	{"table_id":"1808311409",		"url":"https://apap-ohs.rt.org.au/modules/tasks/pwa-form.html","quest":"1"},
+
+				"3m-pwa2":	 	{"table_id":"1808311409",		"url":"https://apap-ohs.rt.org.au/modules/tasks/pwa-data.html",	"form_module":"3m-pwa2-form"},
+				"3m-pwa2-form":	 	{"table_id":"1808311409",		"url":"https://apap-ohs.rt.org.au/modules/tasks/pwa-form.html","quest":"1"},
+
+				"3m-pwv1":	 	{"table_id":"1808311409",		"url":"https://apap-ohs.rt.org.au/modules/tasks/pwv-data.html",	"form_module":"3m-pwv1-form"},
+				"3m-pwv1-form":	 	{"table_id":"1808311409",		"url":"https://apap-ohs.rt.org.au/modules/tasks/pwv-form.html","quest":"1"},
+
+				"3m-pwv2":	 	{"table_id":"1808311409",		"url":"https://apap-ohs.rt.org.au/modules/tasks/pwv-data.html",	"form_module":"3m-pwv2-form"},
+				"3m-pwv2-form":	 	{"table_id":"1808311409",		"url":"https://apap-ohs.rt.org.au/modules/tasks/pwv-form.html","quest":"1"},
+
+				"3m-cpapdownload":	 	{"table_id":"1808311409",		"url":"https://apap-ohs.rt.org.au/modules/tasks/cpapdownload-data.html",	"form_module":"3m-cpapdownload-form"},
+				"3m-cpapdownload-form":	 	{"table_id":"1808311409",		"url":"https://apap-ohs.rt.org.au/modules/tasks/cpapdownload-form.html","quest":"1"},
+
+				"3m-ess":	 	{"table_id":"1808311409",		"url":"https://apap-ohs.rt.org.au/modules/tasks/epworth-sleepiness-scale-data.html",	"form_module":"3m-ess-form"},
+				"3m-ess-form":	 	{"table_id":"1808311409",		"url":"https://apap-ohs.rt.org.au/modules/tasks/epworth-sleepiness-scale-form.html","quest":"1"},
+
+				"3m-sri":	 	{"table_id":"1808311409",		"url":"https://apap-ohs.rt.org.au/modules/tasks/sri-data.html",	"form_module":"3m-sri-form"},
+				"3m-sri-form":	 	{"table_id":"1808311409",		"url":"https://apap-ohs.rt.org.au/modules/tasks/sri-form.html","quest":"1"},
+
+				"3m-fosq":	 	{"table_id":"1808311409",		"url":"https://apap-ohs.rt.org.au/modules/tasks/fosq-data.html",	"form_module":"3m-fosq-form"},
+				"3m-fosq-form":	 	{"table_id":"1808311409",		"url":"https://apap-ohs.rt.org.au/modules/tasks/fosq-form.html","quest":"1"},
+
+				"3m-ecg":	 	{"table_id":"1808311409",		"url":"https://apap-ohs.rt.org.au/modules/tasks/ecg-data.html",	"form_module":"3m-ecg-form"},
+				"3m-ecg-form":	 	{"table_id":"1808311409",		"url":"https://apap-ohs.rt.org.au/modules/tasks/ecg-form.html","quest":"1"},
+
+
+
 
 				"quest_list":{
 				"list":{
