@@ -23,19 +23,19 @@
                 <div class='row row__ID'>
     				<div class="col">
     					<span>Height(cm)</span>
-    					<input type=text class=form-control name=Height>
+    					<input type=number class=form-control name=Height>
     				</div>
     			</div>
                 <div class='row row__ID'>
     				<div class="col">
     					<span>Weight (kg)</span>
-    					<input type=text class=form-control name=Weight>
+    					<input type=number class=form-control name=Weight step=".01">
     				</div>
     			</div>
                 <div class='row row__ID'>
     				<div class="col">
     					<span>BMI</span>
-    					<input type=text class=form-control  readonly name=BMI>
+    					<input type=number class=form-control  step=".01" readonly name=BMI>
     				</div>
     			</div>
                 <!---------------------------------------------------->
@@ -58,8 +58,14 @@
             VmInclude:__COMPONENT__/module/form.v1.js
             VmInclude:__CURRENT_PATH__/task-form.js
             //-------------------------------------
-            /*record.BMI=((parseInt(record.Height))*((parseInt(record.Height))/((parseInt(record.Weight)).toString();
-*/
+            $('#D__ID input[name=Height]').on('change',function(){   cal();  })
+            $('#D__ID input[name=Weight]').on('change',function(){   cal();  })
+            var cal=function(){
+                var h=$('#D__ID input[name=Height]').val()/100;
+                var w=$('#D__ID input[name=Weight]').val();
+                var b=(w/(h*h)).toFixed(2);
+                $('#D__ID input[name=BMI]').val(b);
+            }
         }
     </script>
     <style>
