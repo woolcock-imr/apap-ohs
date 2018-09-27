@@ -1,7 +1,7 @@
 <div id=D__ID>
     <section id=form_container__ID>
         <div id=header__ID>
-    		Anthropometry
+    		Social History
     	</div>
     	<form id=F__ID>
             <div class="container">
@@ -66,8 +66,31 @@
                 <div class='row row__ID'>
     				<div class="col">
     					<span>Alcohol</span>
-    					<input type=date class=form-control  name=alcohol>
-              <!--radiobuttons and free text??-->
+              <br>
+              <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                  <input class="form-check-input" type="radio" name="alcohol" value="Nil"> Nil
+                  </label>
+              </div>
+              <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                  <input class="form-check-input" type="radio" name="alcohol" value="Social"> Social
+                  </label>
+              </div>
+              <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                  <input class="form-check-input" type="radio" name="alcohol" value="Daily"> Daily
+                  </label>
+              </div>
+              <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                  <input class="form-check-input" type="radio" name="alcohol" value="Reformed"> Reformed Alcoholic
+                  </label>
+              </div>
+
+
+    					<input type=Number class=form-control  placeholder="Number of drinks per week" name=alcohol_week>
+
     				</div>
     			</div>
 
