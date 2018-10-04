@@ -40,7 +40,7 @@
         $vm.api_path_development="https://cbs.wappsystem.com/dev/";
         $vm.api_path_production="https://rt.woolcock.org.au/pro/";
         $vm.default_production="Yes";
-        $vm.qid='91000127';
+        $vm.qid='91000126';
         $vm.vm_router=1;
         if(window.location.hostname=='127.0.0.1' || window.location.hostname=='localhost') $vm.localhost=true;
         //------------------------------------
@@ -206,6 +206,14 @@
         $vm.menu_click=function(href){
             href=href.replace('?\/','');
             href=href.replace(/\//g,'_');
+            if($vm.server=="production"){
+                if(href=='permissions' || href=='main'){
+                    if($vm.user=='guest'){
+                        $vm.alert("No permission!");
+                        return;
+                    }
+                }
+            }
             $vm.load_module_v2(href,$vm.root_layout_content_slot,{});
         }
         //------------------------------------
