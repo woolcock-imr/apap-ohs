@@ -15,7 +15,7 @@
 	            <span>Developer</span>
 	            <ul>
 	                <li m=permission-query-data>Permission queries - database access control logic</li>
-					<!--<li m=permission-check>Permission Check - check a permission for a login name</li>-->
+					<li m=permission-check>Permission Check - check a permission for a login name</li>
 	            </ul>
 			</div>
 		</section>
@@ -57,7 +57,7 @@
 	    		var pids="";
 	    		if($vm.server==='production'){
 	    		  $('.nav__ID li').each(function(index){
-	    		      var name=$(this).attr('module');
+	    		      var name=$(this).attr('m');
 	    		      var pid=undefined; if($vm.module_list[prefix+name]!==undefined)  pid=$vm.module_list[prefix+name]['table_id'];
 	    		      if(pid!==undefined && pid!=='--------'){
 	    		         if(pids!=="") pids+=",";
@@ -65,9 +65,9 @@
 	    		      }
 	    		  });
 	    		  if(pids!==""){
-	    		      $VmAPI.request({data:{cmd:'permissions',pids:pids},callback:function(res){
+					  $VmAPI.request({data:{cmd:'get-permissions',qid:$vm.qid,pids:pids},callback:function(res){
 	    		          $('.nav__ID li').each(function(index){
-	    		              var name=$(this).attr('module');
+	    		              var name=$(this).attr('m');
 	    					  var pid=undefined; if($vm.module_list[prefix+name]!==undefined)  pid=$vm.module_list[prefix+name]['table_id'];
 	    		              if(pid!==undefined && pid!=='--------'){
 	    		                  $(this).removeClass('not_allowed__ID');
@@ -117,6 +117,7 @@
 	    }
 	</script>
 	<style>
+		VmInclude:__COMPONENT__/navigation/navigation.css
 		#D__ID{
 	        height:100%;
 	        color:#283f55;
@@ -196,10 +197,5 @@
 			display:inline-block;
 			width:150px;
 		}
-		/*
-	    .nav__ID>ul>li u:nth-child(2){
-	        font-size:11px;
-		}
-		*/
 	</style>
 </div>

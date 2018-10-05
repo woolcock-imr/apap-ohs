@@ -69,7 +69,7 @@
         		      }
         		  });
         		  if(pids!==""){
-        		      $VmAPI.request({data:{cmd:'permissions',pids:pids},callback:function(res){
+        		      $VmAPI.request({data:{cmd:'get-permissions',qid:$vm.qid,pids:pids},callback:function(res){
         		          $('.nav__ID li').each(function(index){
         		              var name=$(this).attr('module');
         					  var pid=undefined; if($vm.module_list[prefix+name]!==undefined)  pid=$vm.module_list[prefix+name]['table_id'];

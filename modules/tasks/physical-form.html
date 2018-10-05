@@ -20,38 +20,38 @@
                 <!---------------------------------------------------->
 
                 <!-- Form Inputs-------------------------------------->
-                <div class='row row__ID'>
-    				<div class="col">
-    					<span>Systolic Blood Pressure</span>
-    					<input type=text class=form-control name=BP_sys>
-    				</div>
-    			</div>
-          <div class='row row__ID'>
-              <div class="col">
-              <span>Diastolic Blood Pressure</span>
-              <input type=text class=form-control name=BP_dia>
-              </div>
-          </div>
-          <div class='row row__ID'>
-            <div class="col">
-            <span>Oxygen Saturation (SpO2)</span>
-            <input type=text class=form-control name=spo2>
-            <!--radiobuttons and free text??-->
-            </div>
-          </div>
-          <div class='row row__ID'>
-            <div class="col">
-            <span>Heart rate</span>
-            <input type=text class=form-control  name=HR>
-            </div>
-          </div>
-          <div class='row row__ID'>
-            <div class="col">
-            <span>Heart Rate Variability (RR)</span>
-            <input type=text class=form-control  name=RR>
-            </div>
-          </div>
-          Click if any abnormalities
+        <div class='row row__ID'>
+        <div class="col">
+        <span>Systolic Blood Pressure</span>
+        <input type=number class=form-control name=BP_sys>
+        </div>
+        </div>
+        <div class='row row__ID'>
+        <div class="col">
+        <span>Diastolic Blood Pressure</span>
+        <input type=number class=form-control name=BP_dia>
+        </div>
+        </div>
+        <div class='row row__ID'>
+        <div class="col">
+        <span>Oxygen Saturation (SpO2)</span>
+        <input type=number class=form-control name=spo2>
+        <!--radiobuttons and free text??-->
+        </div>
+        </div>
+        <div class='row row__ID'>
+        <div class="col">
+        <span>Heart rate</span>
+        <input type=number class=form-control  name=HR>
+        </div>
+        </div>
+        <div class='row row__ID'>
+        <div class="col">
+        <span>Heart Rate Variability (RR)</span>
+        <input type=text class=form-control  name=RR>
+        </div>
+        </div>
+        Click if any abnormalities
         <div class='row row__ID'>
           <div class="col">
           <span>General Appearance</span>
@@ -258,8 +258,6 @@
             VmInclude:__COMPONENT__/module/form.v1.js
             VmInclude:__CURRENT_PATH__/task-form.js
             //-------------------------------------
-            record.BMI=((parseInt(record.Height))*((parseInt(record.Height))/((parseInt(record.Weight)).toString();
-
         }
     </script>
     <style>
