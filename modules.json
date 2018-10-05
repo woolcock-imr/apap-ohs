@@ -140,22 +140,16 @@
 
 		"quest_list":{
 			"list":{
-				"Screening":[
-					{"table_id":"1809012356","task_name":"Screening - Consent"},
-					{"table_id":"1808311410","task_name":"Screening - Epworth Sleepiness Scale"},
-					{"table_id":"1809010715","task_name":"Screening - pittsburgh sleep quality index"},
-					{"table_id":"1809010719","task_name":"Screening - Depression anxiety stress scales"},
-					{"table_id":"1809010720","task_name":"Screening - Flinders fatigue scale"},
-					{"table_id":"1809010721","task_name":"Screening - Fatigue severity scale"},
-					{"table_id":"1809010722","task_name":"Screening - Insomnia Severity Index"}
-				],
 				"Visit 1":[
-					{"table_id":"1808311409","task_name":"Visit 1 - Data of visit"}
-				],
-				"Template":[
-					{"table_id":"1808311450","task_name":"Template 1"},
-					{"table_id":"1808311454","task_name":"Template 2"}
-				]
+					{"table_id":"91000150","task_name":"Visit 1 - Epworth Sleepiness Scale"},
+					{"table_id":"91000149","task_name":"Visit 1 - Severe Respiratory Insufficiency Questionnaire "},
+					{"table_id":"91000153","task_name":"Visit 1 - Functional Outcomes of Sleep Questionnaire"}
+							],
+				"3 Month":[
+					{"table_id":"91000136","task_name":"3 Month - Epworth Sleepiness Scale"},
+					{"table_id":"91000133","task_name":"3 Month - Severe Respiratory Insufficiency Questionnaire "},
+					{"table_id":"91000134","task_name":"3 Month - Functional Outcomes of Sleep Questionnaire"}
+							]
 			}
 		}
 	}
