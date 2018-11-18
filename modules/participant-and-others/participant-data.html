@@ -7,7 +7,7 @@
             //-------------------------------------
             VmInclude:__COMPONENT__/module/grid.v1.js
             //-------------------------------------
-            var fields="Participant ID|UID,Subject_ID,Screening_Number,Subject_Initials,Randomisation_Number,Gender,DOB,_Data_Entry,_Setup,_Quest,_Login_ID,_Password";
+            var fields="Participant ID|UID,Subject_ID,Randomisation_Number,Randomised_by,Screening_Number,Subject_Initials,Gender,DOB,_Data_Entry,_Setup,_Quest,_Login_ID,_Password";
             m.fields="_Form,"+fields+",Submit Date|DateTime,Submitted by|Author,_Delete";
             m.form_fields=fields;
             //-------------------------------------
@@ -18,6 +18,28 @@
                     case 'UID':
                         records[I].vm_readonly[field]=true;
                         break;
+                    case 'Randomised_by':
+    					records[I].vm_readonly[field]=true;
+                        break;
+    				case 'Randomisation_Number':
+    					records[I].vm_readonly[field]=true;
+    					td.html(records[I][field]);
+    					if(records[I][field]==undefined || records[I][field]==''){
+    						td.on('click', function(){
+    							var sql="select top 1 RN=max(V1) from [TABLE-"+m.db_pid+"]";
+    							$VmAPI.request({data:{cmd:'read',qid:m.qid,sql:sql},callback:function(res){
+    								if(res.records.length==1){
+    									var RN=parseInt(res.records[0].RN)+1;
+    									RN=RN.toString()
+    									td.html(RN);
+                                        records[I].Randomised_by=$vm.user;
+    									set_value(RN,records,I,field);
+                                        td.parent().find("td[data-id='Randomised_by']").html($vm.user);
+    								}
+    							}})
+    						})
+    					}
+    				    break;
                     case 'DOB':
                         var html='<input type=date style="border:none" />';
                         $vm.render_input_field(records[I],'__ID',td,html);
@@ -61,7 +83,10 @@
             }
             //-------------------------------------
             m.before_submit=function(record,dbv){
-                return false;
+                if(record.Randomisation_Number!=''){
+    				dbv.V1=record.Randomisation_Number;
+    			}
+                return true;
             }
             //-------------------------------------
             m.set_req=function(){
