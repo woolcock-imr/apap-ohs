@@ -110,8 +110,9 @@
             }
             //-------------------------------------
             m.before_submit=function(record,dbv){
-                if(record.Randomisation_Number!=''){
-    				dbv.V1=record.Randomisation_Number;
+                if(record.V1!='0' && record.V2!='0'){
+    				dbv.V1=record.V1;
+                    dbv.V2=record.V2;
     			}
                 return true;
             }
